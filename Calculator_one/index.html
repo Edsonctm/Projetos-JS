@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha primeira calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Esta é minha primeira calculadora</h1>
+        <p>Esta calculadora foi feita usando os conhecimentos adquiridos em apenas 1 dia de estudos de JavaScript. <br></p>
+        <p id="segundo">Peço desculpas por qualquer erro.</p>
+    </header>
+    <div id="calculadora">
+        <p id="visor"> 
+        </p>
+
+        <div id="mesadeoperacao">
+            <div id="numeros">
+                <input type="button" value="0" class="todosnumeros" id="zero" onclick="insert('0')">
+                <input type="button" value="." class="todosnumeros" id="ponto" onclick="insert('.')">
+                <input type="button" value="1" class="todosnumeros" id="um" onclick="insert('1')">
+                <input type="button" value="2" class="todosnumeros" id="dois" onclick="insert('2')">
+                <input type="button" value="3" class="todosnumeros" id="tres" onclick="insert('3')">
+                <input type="button" value="4" class="todosnumeros" id="quatro" onclick="insert('4')">
+                <input type="button" value="5" class="todosnumeros" id="cinco" onclick="insert('5')">
+                <input type="button" value="6" class="todosnumeros" id="seis" onclick="insert('6')">
+                <input type="button" value="7" class="todosnumeros" id="sete" onclick="insert('7')">
+                <input type="button" value="8" class="todosnumeros" id="oito" onclick="insert('8')">
+                <input type="button" value="9" class="todosnumeros" id="nove" onclick="insert('9')">
+            
+            </div>
+            <div id="operadores">
+                <input type="button" value="=" class="todosnumeros" id="igual" onclick="equal()">
+                <input type="button" value="+" class="todosnumeros" id="soma" onclick="insert('+')">
+                <input type="button" value="-" class="todosnumeros" id="diminui" onclick="insert('-')">
+                <input type="button" value="*" class="todosnumeros" id="multiplica" onclick="insert('*')">
+                <input type="button" value="/" class="todosnumeros" id="divide" onclick="insert('/')">
+                <input type="button" value="C" class="todosnumeros" id="clear" onclick="clean()">
+                <input type="button" value="&lt;" class="todosnumeros" id="apagar" onclick="apagar()">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

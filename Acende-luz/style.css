@@ -1,0 +1,50 @@
+* {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+body {
+    background-color: black;
+}
+
+#titulo {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+#imglampada{
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 100px;
+}
+
+#check {
+    display: none;
+}
+
+#acesa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#mensagem{
+    position: relative;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 30px;
+    right: 50%;
+    transform: translate(50%);
+}
+
+#wally{
+    position: relative;;
+    display: none;
+}
